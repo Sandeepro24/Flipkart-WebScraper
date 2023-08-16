@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "b1a6012f-38e4-43f4-ad2f-3c1febdf3795",
+		"name": "flipkart web scraping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26640963"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "counter",
+						"value": "15",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "payload",
+						"value": "https://www.flipkart.com/paduki-women-grey-flats/p/itmc739c3b40c022?pid=SNDFWBZUXCYQF6NJ&lid=LSTSNDFWBZUXCYQF6NJHX6UE5&marketplace=FLIPKART&store=osp%2Fiko%2F9d5&spotlightTagId=FkPickId_osp%2Fiko%2F9d5&srno=b_1_3&otracker=nmenu_sub_Women_0_Flats&fm=organic&iid=142b0f79-a713-4f3a-8ecb-1790c6a59aad.SNDFWBZUXCYQF6NJ.SEARCH&ppt=browse&ppn=browse&ssid=uqargyhs4w0000001692093782042",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"sandeep\",\r\n    \"email\": \"azcx@gmail.com\",\r\n    \"password\": \"sdfddxcs132\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/Signup"
+			},
+			"response": []
+		},
+		{
+			"name": "Signing In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"azcx@gmail.com\",\r\n    \"password\": \"sdfddxcs132\"\r\n}"
+				},
+				"url": "http://localhost:3000/SignIn"
+			},
+			"response": []
+		},
+		{
+			"name": "product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer ",
+						"type": "text"
+					},
+					{
+						"key": "payload",
+						"value": "https://www.flipkart.com/ausk-striped-men-round-neck-blue-black-t-shirt/p/itmc4b97a0badb26?pid=TSHGHU9FWVZFMTEH&lid=LSTTSHGHU9FWVZFMTEHL7DCSL&marketplace=FLIPKART&store=clo%2Fash%2Fank%2Fedy&srno=b_1_3&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Fashion~Men%2527s%2BTop%2BWear~Men%2527s%2BT-Shirts_IF56C41VGEYS&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L2_view-all&fm=organic&iid=fc865301-f64a-4306-8a8b-c74f20da67c8.TSHGHU9FWVZFMTEH.SEARCH&ppt=browse&ppn=browse&ssid=cybvr0b5g00000001692095526814",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:3000/product"
+			},
+			"response": []
+		}
+	]
+}
