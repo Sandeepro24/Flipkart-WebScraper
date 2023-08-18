@@ -73,7 +73,7 @@ const userAuthenticator = (req,res,next)=>{
    }
 }
 
-mongoose.connect('mongodb+srv://slidingwindow:a2sdw3f42c3@mydatabase.1cn6h07.mongodb.net/',{useNewUrlParser: true, useUnifiedTopology: true, dbName: "Flipkart"});
+mongoose.connect('mongodb+srv://YourUsername:Password@mydatabase.1cn6h07.mongodb.net/',{useNewUrlParser: true, useUnifiedTopology: true, dbName: "Flipkart"});
 
 app.post("/Signup",async(req,res)=>{
     const {username,email,password} = req.body;
